@@ -19,6 +19,23 @@ npm install --save re-quire
 
 ## Use
 
+"Normal" Node `require` is kind of verbose if you have a lot of things to load.
+
+```js
+const foo = require('./src/foo')
+const bar = require('./src/subfolder/bar')
+const baz = require('./src/another-folder/baz')
+```
+
+With this module `re-quire` we can quickly set the base folder and load all things in a single call
+
+```js
+// all the things we want to load are from folder "./src"
+const load = require('re-quire')(__dirname + './src')
+// now load "foo", "bar" and "baz"
+const [foo, bar, baz] = loadSrc('./foo', './subfolder/bar', './another-folder/baz')
+```
+
 ### Small print
 
 Author: Gleb Bahmutov &lt;gleb.bahmutov@gmail.com&gt; &copy; 2018

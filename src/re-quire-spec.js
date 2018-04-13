@@ -8,10 +8,7 @@ const snapshot = require('snap-shot-it')
 describe('re-quire', () => {
   it('loads several things', () => {
     const loadSrc = reQuire(join(__dirname, '..', 'test', 'src'))
-    const { foo, bar } = loadSrc({
-      foo: './foo',
-      bar: './subfolder/bar'
-    })
+    const [foo, bar] = loadSrc('./foo', './subfolder/bar')
     snapshot({ foo, bar })
   })
 })
