@@ -1,7 +1,7 @@
 {
   "name": "re-quire",
   "description": "Quick and dirty Node require for many files at once from subfolders",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
   "bugs": "https://github.com/bahmutov/re-quire/issues",
   "config": {
@@ -72,7 +72,9 @@
     "size": "t=\"$(npm pack .)\"; wc -c \"${t}\"; tar tvf \"${t}\"; rm \"${t}\";",
     "test": "npm run unit",
     "unit": "mocha src/*-spec.js",
-    "unused-deps": "dependency-check --unused --no-dev ."
+    "unused-deps": "dependency-check --unused --no-dev .",
+    "travis-deploy-once": "travis-deploy-once",
+    "semantic-release": "semantic-release"
   },
   "devDependencies": {
     "ban-sensitive-files": "1.9.2",
@@ -85,6 +87,8 @@
     "pre-git": "3.17.1",
     "prettier-standard": "8.0.1",
     "snap-shot-it": "4.1.4",
-    "standard": "11.0.1"
+    "standard": "11.0.1",
+    "travis-deploy-once": "^4.4.1",
+    "semantic-release": "^15.1.7"
   }
 }
