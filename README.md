@@ -1,4 +1,4 @@
-# re-quire
+# @bahmutov/re-quire
 
 > Quick and dirty Node require for many files at once from subfolders
 
@@ -14,7 +14,7 @@
 Requires [Node](https://nodejs.org/en/) version 6 or above.
 
 ```sh
-npm install --save re-quire
+npm install --save @bahmutov/re-quire
 ```
 
 ## Use
@@ -31,7 +31,7 @@ With this module `re-quire` we can quickly set the base folder and load all thin
 
 ```js
 // all the things we want to load are from folder "./src"
-const load = require('re-quire')(__dirname + './src')
+const load = require('@bahmutov/re-quire')(__dirname + './src')
 // now load "foo", "bar" and "baz"
 const [foo, bar, baz] = loadSrc('./foo', './subfolder/bar', './another-folder/baz')
 ```
@@ -74,8 +74,8 @@ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
 
-[npm-icon]: https://nodei.co/npm/re-quire.svg?downloads=true
-[npm-url]: https://npmjs.org/package/re-quire
+[npm-icon]: https://nodei.co/npm/@bahmutov/re-quire.svg?downloads=true
+[npm-url]: https://npmjs.org/package/@bahmutov/re-quire
 [ci-image]: https://travis-ci.org/bahmutov/re-quire.svg?branch=master
 [ci-url]: https://travis-ci.org/bahmutov/re-quire
 [semantic-image]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg

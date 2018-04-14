@@ -1,5 +1,5 @@
 {
-  "name": "re-quire",
+  "name": "@bahmutov/re-quire",
   "description": "Quick and dirty Node require for many files at once from subfolders",
   "version": "0.0.0-development",
   "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
